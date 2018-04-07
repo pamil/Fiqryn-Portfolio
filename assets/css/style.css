@@ -1,0 +1,306 @@
+body, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: Lato;
+	color: #333;
+	overflow-y: scroll;
+    background: url(../../images/bg.jpg) no-repeat center fixed;
+	display: block;
+    background-size: cover;
+/*	background-color: #c7c3bf;*/
+	letter-spacing: 1.5px;
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+header {
+	position: fixed;
+	display: block;
+	width: 100%;
+	min-height: 30px;
+	padding: 25px 0;
+	background-color: white;
+	overflow: hidden;
+
+}
+
+h1 {
+	font-family: Raleway;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	float: left;
+	margin: 0;
+}
+
+h3 {
+	font-size: 16px;
+	margin: 8px 0;
+}
+
+h3 + p {
+	font-size: 14px;
+	margin: 6px 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+header nav h2 {
+	line-height: 0; /* VERY IMPORTANT */
+	margin: 0;
+	text-indent: 100%; 
+	white-space: nowrap; 
+	overflow: hidden;
+}
+
+header nav {
+	float: right;
+	margin: 0 auto;
+}
+
+header:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+header nav li {
+	float: left;
+	margin-left: 20px;
+}
+
+header nav li:hover {
+	font-weight: 700;
+}
+
+header nav li {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#main-banner {
+	padding: 80px 0 0 0;
+	margin: 0;
+	line-height: 0;
+}
+
+#main-banner img {
+	width: 100%;
+}
+
+.main-element {
+	border: 5px solid #333;
+	text-align: center;
+	padding: 0 8% 30px 8%;
+	margin: 30px 0;
+}
+
+.main-element h2 {
+	width: 10em;
+	background-color: #e2e0de;
+	margin: -17px auto 15px;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #333;
+}
+
+.with-background {
+	background-color: #e2e0de;
+	width: 100%;
+	padding: 30px 0;
+	margin: 0;
+}
+
+#portfolio img {
+	width: 100%;
+}
+
+#portfolio li {
+	float: left;
+	width: 30%;
+	padding: 1.66%;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+#portfolio:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+
+#experience li {
+	float: left;
+	width: 45%;
+	padding: 2.5%;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+#experience:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+#experience img {
+	width: 100%;
+}
+
+.main-element ul {
+	display: inline-block;
+}
+
+button {
+	background-color: white;
+	font-family: Lato;
+	color: #333;
+	border: 0;
+	font-size: 16px;
+  	padding: 13px 18px;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	letter-spacing: 2px;
+  	outline: none;
+  	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+	transition: 0.5s background-color;
+}
+
+button:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+#copyright {
+	background-color: rgba(255, 255, 255, 0.4);
+	text-align: center;
+	padding: 20px 0;
+}
+
+.no-background {
+	content: "";
+	height: 250px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px) {
+
+header nav {
+	float: none;
+	margin: 20px 0;
+}
+
+header nav li {
+	margin-left: 0;
+	width: 20%;
+	text-align: center;
+	font-size: 14px;
+}
+
+header h1 {
+	float: none;
+	text-align: center;
+}
+
+header {
+	position: fixed;
+	display: block;
+	width: 100%;
+	min-height: 20px;
+	padding: 15px 0;
+	background-color: white;
+	overflow: hidden;
+}
+
+#main-banner {
+	padding: 98px 0 0 0;
+
+}
+
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+#portfolio li, #experience li {
+	width: 80%;
+	padding: 0 10%;
+	margin: 20px 0;
+	}
+
+header nav li {
+	float: none;
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px solid #e2e0de;
+}
+
+header .wrapper {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+header {
+	padding-bottom: 0;
+}
+
+header nav {
+	margin-bottom: 0;
+}
+
+#burger-nav {
+	width: 100%;
+	height: 50px;
+	background: url(../../images/burger.png) no-repeat 98% center;
+	cursor: pointer;
+}
+
+header nav ul {
+	height: 0;
+	overflow: hidden;
+}
+
+header nav ul.open{
+	height: auto;
+}
+
+}
+
+
+
+
+
+
