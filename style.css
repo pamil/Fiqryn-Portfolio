@@ -6,7 +6,7 @@ body, ul, li, html {
 html {height: 100%;}
  
 body {
-	background: url(../../images/bg.jpg) no-repeat center fixed;
+	background: url(images/bg.jpg) no-repeat center fixed;
 	background-size: cover;
 	color: #333;
 	display: block;
@@ -335,7 +335,7 @@ header {padding-bottom: 0;}
 	header nav {margin-bottom: 0;}
  
 #burger-nav {
-	background: url(../../images/burger.png) no-repeat 98% center;
+	background: url(images/burger.png) no-repeat 98% center;
 	cursor: pointer;
 	height: 50px;
 	width: 100%;
