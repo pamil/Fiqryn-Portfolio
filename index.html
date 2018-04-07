@@ -9,17 +9,17 @@
 <body>
 
 <header>
-	<div class="wrapper">
+	<div class="wrapper-nav">
 		<h1><a href="">Fiqryn Shahrodin</a></h1>
 		<nav>
 			<h2>Main navigation</h2>
 			<div id="burger-nav"></div>
 			<ul>
-				<li><a href="#about" class="anchor">About</a></li>
-				<li><a href="#portfolio" class="anchor">Portfolio</a></li>
-				<li><a href="#experience" class="anchor">Experience</a></li>
-				<li><a href="#resume" class="anchor">Resume</a></li>
-				<li><a href="#contact" class="anchor">Contact</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>	
 	</div>
@@ -30,7 +30,7 @@
 </div>
 
 <main>
-	<section id="about" class="with-background">
+	<section id="about" class="with-background anchor">
 		<div class="wrapper">
 			<div class="main-element">
 				<h2>About</h2>
@@ -38,10 +38,8 @@
 			</div>
 		</div>
 	</section>
-<div class="no-background">
-	
-</div>
-	<section id="portfolio" class="with-background">
+
+	<section id="portfolio" class="with-background anchor">
 		<div class="wrapper">
 			<div class="main-element">
 				<h2>Portfolio</h2>
@@ -62,13 +60,13 @@
 						<p>Some very short description</p>
 					</li>
 				</ul>
-				<button>View more</button>
+				<button onclick="window.location.href='portfolio.html'">View more</button>
 			</div>
 		
 		</div>
 	</section>
 
-	<section id="experience" class="with-background">
+	<section id="experience" class="with-background anchor">
 		<div class="wrapper">
 			<div class="main-element">
 				<h2>Experience</h2>
@@ -89,7 +87,7 @@
 	</section>
 </main>
 
-<section id="resume" class="with-background">
+<section id="resume" class="with-background anchor">
 	<div class="wrapper">
 		<div class="main-element">
 				<h2>Resume</h2>
@@ -99,11 +97,28 @@
 	</div>
 </section>
 
-<section id="contact" class="with-background">
+<section id="contact" class="with-background anchor">
 		<div class="wrapper">
 			<div class="main-element">
 				<h2>Contact</h2>
-				some forms and stuff
+				<div id="contact-form">
+					<form action="">
+  						<label for="name">Name:</label>
+  						<input id="name" type="text" name="name">
+  						<label for="email">Email:</label>
+  						<input id="email" type="email" name="email">
+  						<label for="topic">Topic:</label>
+  						<input id="topic" type="text" name="topic">
+  						<label for="message">Message:</label>
+  						<textarea id="message" type="text-area" name="message"></textarea>
+ 						<button>Send</button>
+					</form>
+				</div>
+				<div id="contact-info">
+					<p>If you want to contact me or just send some spam and weird offers feel free to do so:</p>
+					<p>email@email.email</p>
+					<p>+99 999 999 999</p>
+				</div>
 			</div>
 		</div>
 	</div>

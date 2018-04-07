@@ -8,5 +8,4 @@ burger.addEventListener("click", function(){
 		ul.classList.remove("open");
 		});	
 	}
-})
-
+});
